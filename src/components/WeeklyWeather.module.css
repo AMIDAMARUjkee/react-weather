@@ -1,0 +1,29 @@
+.weeklyBlock {
+  border: 1px solid #696ce7;
+  border-radius: 5px;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #477dc1;
+  position: relative;
+}
+.weeklyBlock::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid #696ce7;
+}
+.weeklyData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.weeklyDay {
+  font-style: bold;
+  text-transform: capitalize;
+}

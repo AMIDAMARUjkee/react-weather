@@ -1,0 +1,48 @@
+.todayContainer {
+  border: 1px solid #696ce7;
+  border-radius: 5px;
+  background-color: #60a5fa;
+}
+.todayBlock {
+  width: 500px;
+}
+.todayMainInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todayCityName {
+  font-size: 45px;
+  line-height: 1;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.todayCityDate {
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.todayWeather {
+  font-size: 40px;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.todayCondition {
+  font-size: 17px;
+  line-height: 1;
+}
+.addInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.addInfoLeft {
+  display: flex;
+  flex-direction: column;
+}
+.addInfoRight {
+  display: flex;
+  flex-direction: column;
+}

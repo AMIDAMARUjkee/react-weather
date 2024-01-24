@@ -1,0 +1,41 @@
+.header {
+  background-color: #60a5fa;
+}
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.siteTitle {
+  margin-left: auto;
+  padding-left: 120px;
+  margin-right: auto;
+  font-size: 32px;
+  line-height: 1;
+}
+.logo {
+  width: 96px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4a71a1;
+}
+.cityInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.error {
+  color: red;
+}
