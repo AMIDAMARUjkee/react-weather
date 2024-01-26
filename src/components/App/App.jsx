@@ -66,7 +66,7 @@ function App() {
       </header>
       <main className={styles.main}>
         <Search
-          className="pb-10 custom-search "
+          className={styles.search}
           value={input}
           onChange={(e) =>
             handleChange(
@@ -74,9 +74,6 @@ function App() {
             )
           }
           placeholder="Input city name"
-          style={{
-            width: 500,
-          }}
           allowClear
           enterButton="Search"
           size="large"
@@ -86,12 +83,10 @@ function App() {
           {error ? (
             <div className={styles.error}>{error}</div>
           ) : (
-            <>
-              <div>{isLoadingDaily ? 'Загрузка....' : <TodayWeather dataDaily={dataDaily} />}</div>
-              <div>
-                {isLoadingWeekly ? 'Загрузка...' : <WeeklyWeather dataWeekly={dataWeekly} />}
-              </div>{' '}
-            </>
+            <div className={styles.weatherBlock}>
+              {isLoadingDaily ? 'Загрузка....' : <TodayWeather dataDaily={dataDaily} />}
+              {isLoadingWeekly ? 'Загрузка...' : <WeeklyWeather dataWeekly={dataWeekly} />}{' '}
+            </div>
           )}
         </div>
       </main>

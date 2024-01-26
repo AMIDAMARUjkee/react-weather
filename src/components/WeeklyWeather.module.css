@@ -27,3 +27,12 @@
   font-style: bold;
   text-transform: capitalize;
 }
+.weeklyData {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 560px) {
+  .weeklyBlock {
+    width: 100%;
+  }
+}

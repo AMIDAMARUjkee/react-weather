@@ -39,3 +39,24 @@
 .error {
   color: red;
 }
+.cityInfo {
+  width: 100%;
+  max-width: 500px;
+}
+.weatherBlock {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    max-height: 100dvh;
+  }
+  .weatherBlock {
+    height: 100%;
+    display: grid;
+  }
+  .siteTitle {
+    font-size: 50px;
+    font-weight: bold;
+  }
+}

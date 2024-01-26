@@ -3,9 +3,9 @@
   border-radius: 5px;
   background-color: #60a5fa;
 }
-.todayBlock {
+/* .todayBlock {
   width: 500px;
-}
+} */
 .todayMainInfo {
   display: flex;
   justify-content: center;
@@ -45,4 +45,35 @@
 .addInfoRight {
   display: flex;
   flex-direction: column;
+}
+/* @media screen and (max-width: 1024px) {
+  .todayBlock {
+    background-color: orange;
+    height: 100%;
+  }
+  .todayCityName {
+    font-size: 120px;
+  }
+  .todayCityDate {
+    font-size: 40px;
+  }
+  .todayWeather {
+    font-size: 90px;
+  }
+  .todayCondition {
+    font-size: 35px;
+  }
+  .addInfoLeft {
+    font-size: 25px;
+  }
+  .addInfoRight {
+    font-size: 25px;
+  }
+} */
+/* 
+@media screen and (max-width: 560px) {
+ 
+} */
+.todayCityName {
+  font-size: 6rem;
 }

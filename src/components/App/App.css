@@ -1,13 +1,63 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 #root {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 .header {
   background-color: #3b82f6;
+}
+html {
+  font-size: 16px;
+}
+.ant-input-search {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    height: 100dvh;
+  }
+  .ant-input {
+    height: 2rem !important;
+    font-size: 1rem !important;
+  }
+  .ant-input::placeholder {
+    font-size: 1.5rem !important;
+  }
+
+  .ant-input-search
+    > .ant-input-group
+    > .ant-input-group-addon:last-child
+    .ant-input-search-button {
+    height: 44px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ant-input {
+    height: 2rem !important;
+    font-size: 1rem !important;
+  }
+  .ant-input::placeholder {
+    font-size: 1.5rem !important;
+  }
+
+  .ant-input-search
+    > .ant-input-group
+    > .ant-input-group-addon:last-child
+    .ant-input-search-button {
+    height: 48px;
+    font-size: 25px;
+  }
 }
